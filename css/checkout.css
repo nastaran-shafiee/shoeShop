@@ -1,0 +1,253 @@
+body {
+  background-color: #f3f3f3;
+}
+header {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: left;
+}
+
+.containerAddress {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.addressCart {
+  box-sizing: border-box;
+  padding: 1em;
+  align-self: center;
+  margin-left: 0.3125rem;
+  border-radius: 2rem;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+#addressCart {
+  width: 40%;
+}
+.location {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: #f3f3f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.location p {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nameAddress {
+  width: 75%;
+  line-height: 0.2em;
+}
+.nameAddress p {
+  font-size: 0.9em;
+  color: gray;
+}
+/* order */
+.orderList {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+.containerOrder {
+  padding-left: 0;
+  width: 90%;
+  display: grid;
+  padding-left: 0;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0 auto;
+  gap: 5em;
+}
+#shiping {
+  justify-content: space-around !important;
+}
+.padding {
+  padding: 0.3125rem;
+}
+.disFlex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/*  */
+.containerCart {
+  height: fit-content;
+  display: flex;
+  padding: 0.5rem;
+  margin-top: 2rem;
+
+  background-color: white;
+
+  border-radius: 1.8em;
+  gap: 0.85rem;
+  line-height: 0.1em;
+}
+.cartImg {
+  align-self: center;
+  width: 7em;
+  height: 7em;
+  margin-left: 0.3125rem;
+  border-radius: 1rem;
+  background-color: #f3f3f3;
+  display: flex;
+  justify-content: center;
+}
+.cartImg img {
+  width: 4em;
+  height: 2em;
+  align-self: center;
+}
+.cart {
+  width: 100%;
+}
+.row1 {
+  align-content: flex-start;
+  display: flex;
+  font-size: 1.5em;
+  font-weight: bold;
+  justify-content: space-between;
+}
+.row1 i {
+  align-self: center;
+}
+.price {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+.number {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: #f3f3f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h4 {
+  border-top: 1px solid rgb(222, 221, 221);
+  padding-top: 1.25rem;
+}
+.containerPromoCode {
+  width: 90%;
+  margin: 0 auto;
+}
+.promoCode {
+  box-sizing: border-box;
+
+  align-self: center;
+  margin-left: 0.3125rem;
+  border-radius: 2rem;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.padding {
+  padding: 0 !important;
+}
+.row {
+  padding-left: 0;
+
+  display: grid;
+  padding-left: 0;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0 auto;
+}
+input {
+  background-color: #f3f3f3;
+  border: none;
+  border-radius: 1.25rem;
+  padding: 0.5rem 2rem;
+}
+.promoCode p {
+  width: 1.875rem;
+  height: 1.875rem;
+  border-radius: 50%;
+  background-color: black;
+  color: white;
+  font-weight: bolder;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.containerprice2 {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 1.25rem;
+}
+.price2 {
+  width: 45%;
+  border-radius: 2rem;
+  background-color: white !important;
+  padding: 1em;
+  margin: 0 auto;
+}
+.cartPrice {
+  display: flex;
+  justify-content: space-between;
+}
+.btn {
+  width: 40%;
+  border-radius: 4rem;
+  background-color: black !important;
+
+  margin: 0 auto;
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin-top: 1.25rem;
+}
+#chooseShiping {
+  cursor: pointer;
+}
+#typeShiping {
+  color: darkblue;
+  font-size: 1rem;
+  font-weight: bold;
+}
+@media only screen and (max-width: 700px) {
+  #addressCart {
+    width: 100%;
+  }
+  .addressCart {
+    width: 100%;
+    padding: 0.5em;
+  }
+  .nameAddress p {
+    font-size: 0.7em;
+  }
+  .containerOrder {
+    width: 100%;
+    margin: 0;
+    grid-template-columns: 1fr;
+    gap: 0.2em;
+  }
+  .row {
+    width: 100%;
+    margin: 0;
+    grid-template-columns: 1fr;
+    gap: 0.2em;
+  }
+  .price2 {
+    width: 94%;
+    margin: 0 auto;
+  }
+  .btn {
+    width: 85%;
+  }
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="/css/checkout.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <a href="/html/Home.html">
+          <span class="material-symbols-outlined"> arrow_back </span></a
+        >
+        <h1>Check out</h1>
+      </header>
+      <!-- address -->
+      <div class="containerAddress" >
+        <h3>Shiping Address</h3>
+
+        <div class="address">
+          <div class="addressCart" id="addressCart">
+            <div class="location">
+              <p>
+                <span class="material-symbols-outlined"> location_on </span>
+              </p>
+            </div>
+            <div class="nameAddress">
+              <h5 class="name" id="defultAddresName"></h5>
+              <p class="addressdes" id="defultAddres">
+                
+              </p>
+            </div>
+            <div class="edit" id="nameAddress">
+              <span class="material-symbols-outlined" >
+                drive_file_rename_outline
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end addres -->
+      <!-- order -->
+      <h4 class="orderList">order List</h4>
+      <div class="containerOrder" id="containerOrder">
+       
+        
+      </div>
+      <!-- end order -->
+      <!-- start shiping -->
+      <div class="row">
+      <!-- start row -->
+      <div class="containerAddress " >
+        <h4>choose Shiping</h4>
+
+        <div class="address" >
+          <div class="addressCart padding" id="shiping">
+            <p>
+              <span class="material-symbols-outlined"> local_shipping </span>
+            </p>
+            <div>
+            <span id="typeShiping"></span>
+
+            </div>
+            <div class="edit disFlex">
+            <h5 class="name">Choose Shiping Type</h5>
+              <span class="material-symbols-outlined" id="chooseShiping"> chevron_right </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end shiping -->
+      <!-- start promoCode -->
+      <div class="containerPromoCode">
+        <h4>Promo Code</h4>
+        <div class="promoCode">
+          <input type="text" placeholder="Enter promo Code" id="promoInput" />
+          <p id="promoBtn">+</p>
+        </div>
+      </div>
+    </div>
+      <!-- end row -->
+    </div>
+      <!-- end promoCode -->
+      <!-- start price code -->
+      <div class="containerprice2">
+      <div class="price2">
+        <div class="cartPrice"><p>Amount</p> <p id="amount"></p></div>
+        <div class="cartPrice"><p>Shiping</p> <p id="shipingPrice"></p></div>
+        <div class="cartPrice" style="display:none ;" id="cartPromo" ><p>Promo</p> <p id="promoPrice"></p></div>
+
+
+        <div class="cartPrice"><p>Total</p> <p id="totalamount">0.00</p></div>
+
+     
+     
+      </div>
+    </div>
+      <!-- end price code -->
+      <!-- button -->
+      <div class="btn" id="continueBtn"><p>continue to payment</p></div>
+      <!-- button -->
+
+
+    </div>
+    <script src="/js/checkout.js"></script>
+  </body>
+</html>
