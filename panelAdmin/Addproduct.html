@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="panel.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="order.html">order</a><a href="products.htm">products</a>
+      </nav>
+    </header>
+    <form action="" id="form1">
+      <input type="text" name="fiel" id="file" placeholder="url" />
+
+      <input type="text" name="showName" id="showName" placeholder="Name" />
+
+      <select name="category" id="category" onchange="change1()">
+        <option>Choose category</option>
+
+        <option value="Nike">Nike</option>
+        <option value="Adidas">Adidas</option>
+        <option value="Puma">Puma</option>
+        <option value="Asics">Asics</option>
+        <option value="Reebok">Reebok</option>
+        <option value="converse">converse</option>
+        <option value="New brand">New brand</option>
+        <option value="more">more</option>
+      </select>
+
+      <input type="text" name="price" id="price" placeholder="price" />
+
+      <input
+        type="text"
+        name="description"
+        id="description"
+        placeholder="description"
+      />
+      <div class="checkBox">
+        <p>choose sizes</p>
+        <label for="36">36</label>
+        <input type="checkbox" name="36" id="36" class="checkSize" value="36" />
+        <label for="38">38</label>
+        <input type="checkbox" name="38" id="38" class="checkSize" value="38" />
+        <label for="40">40</label>
+        <input type="checkbox" name="40" id="40" class="checkSize" value="40" />
+        <label for="42">42</label>
+        <input type="checkbox" name="42" id="42" class="checkSize" value="42" />
+        <label for="44">44</label>
+        <input type="checkbox" name="44" id="44" class="checkSize" value="44" />
+        <label for="46">46</label>
+        <input type="checkbox" name="46" id="46" class="checkSize" value="46" />
+        <label for="48">48</label>
+        <input type="checkbox" name="48" id="48" class="checkSize" value="48" />
+      </div>
+
+      <div class="checkBox">
+        <p>choose color</p>
+        <label for="36">black</label>
+        <input
+          type="checkbox"
+          name="black"
+          id="black"
+          class="checkColor"
+          value="black"
+        />
+        <label for="white">white</label>
+        <input
+          type="checkbox"
+          name="white"
+          id="white"
+          class="white"
+          value="white"
+        />
+        <label for="monochrome">monochrome</label>
+        <input
+          type="checkbox"
+          name="monochrome"
+          id="monochrome"
+          class="checkColor"
+          value="monochrome"
+        />
+        <label for="gray">gray</label>
+        <input
+          type="checkbox"
+          name="gray"
+          id="gray"
+          class="checkColor"
+          value="gray"
+        />
+        <label for="brown">brown</label>
+        <input
+          type="checkbox"
+          name="brown"
+          id="brown"
+          class="checkColor"
+          value="brown"
+        />
+        <label for="blue">blue</label>
+        <input
+          type="checkbox"
+          name="blue"
+          id="blue"
+          class="checkColor"
+          value="blue"
+        />
+
+        <!--  -->
+        <label for="blue">green</label>
+        <input
+          type="checkbox"
+          name="green"
+          id="green"
+          class="checkColor"
+          value="green"
+        />
+        <label for="blue">pink</label>
+        <input
+          type="checkbox"
+          name="pink"
+          id="pink"
+          class="checkColor"
+          value="pink"
+        />
+        <label for="blue">orange</label>
+        <input
+          type="checkbox"
+          name="orange"
+          id="orange"
+          class="checkColor"
+          value="orange"
+        />
+        <label for="blue">megneta</label>
+        <input
+          type="checkbox"
+          name="megneta"
+          id="megneta"
+          class="checkColor"
+          value="megneta"
+        />
+        <label for="blue">cyan</label>
+        <input
+          type="checkbox"
+          name="cyan"
+          id="cyan"
+          class="checkColor"
+          value="cyan"
+        />
+
+        <label for="blue">darkred</label>
+        <input
+          type="checkbox"
+          name="darkred"
+          id="darkred"
+          class="checkColor"
+          value="darkred"
+        />
+      </div>
+      <button type="submit" class="btn">Add</button>
+    </form>
+    <script src="panel.js"></script>
+  </body>
+</html>

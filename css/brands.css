@@ -1,0 +1,5 @@
+header {
+  display: flex;
+  gap: 6.25rem;
+  align-items: center;
+}

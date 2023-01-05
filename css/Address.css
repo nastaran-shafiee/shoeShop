@@ -1,0 +1,180 @@
+body {
+  background-color: #f3f3f3;
+}
+header {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: left;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+.containerAddress {
+  width: 95%;
+  margin: 0 auto;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+.addressCart {
+  box-sizing: border-box;
+  width: 80%;
+  box-sizing: border-box;
+  padding: 1em;
+  align-self: center;
+  margin-left: 0.3125rem;
+  border-radius: 2rem;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 1em;
+}
+
+.location {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: #f3f3f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.location p {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#name {
+  color: black;
+  font-weight: bold;
+}
+.nameAddress {
+  width: 70%;
+  line-height: 0.8em;
+}
+.nameAddress p {
+  font-size: 0.9em;
+  color: gray;
+}
+#checkbox {
+  justify-items: right;
+  border-radius: 50%;
+}
+.btn {
+  width: 40%;
+  border-radius: 4rem;
+  background-color: gray !important;
+
+  margin: 0 auto;
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin-top: 1.25rem;
+}
+.containerAdd {
+  width: 40%;
+  margin: 0 auto;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 1.25rem;
+  gap: 1rem;
+}
+.containerAdd input {
+  width: 96%;
+  background-color: rgb(233, 231, 231) !important;
+  border-radius: 4rem;
+  padding: 0.625rem 0.3125rem;
+  border: none;
+  color: black;
+}
+#addBtn {
+  width: 98%;
+  background-color: gray !important;
+  border-radius: 4rem;
+  padding: 0.625rem 0.3125rem;
+  border: none;
+  color: white;
+}
+.displayFlex {
+  display: flex;
+}
+#edit {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+.containerApply {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  position: fixed;
+  bottom: 2rem;
+  justify-content: center;
+  margin-top: 1.25rem;
+  gap: 1rem;
+}
+#Applybtn {
+  width: 40%;
+  border-radius: 4rem;
+  background-color: rgb(13, 13, 13) !important;
+  padding: 0.625rem 0.8rem;
+
+  margin: 0 auto;
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin-top: 1.25rem;
+}
+#Confirm {
+  width: 40%;
+  border-radius: 4rem;
+  background-color: rgb(13, 13, 13) !important;
+  padding: 0.625rem 0.8rem;
+
+  margin: 0 auto;
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin-top: 1.25rem;
+}
+
+@media only screen and (max-width: 700px) {
+  #addressCart {
+    width: 100%;
+  }
+  .addressCart {
+    width: 100%;
+    padding: 0.5em;
+  }
+  .nameAddress p {
+    font-size: 0.6em;
+  }
+  .containerAddress {
+    grid-template-columns: 1fr;
+  }
+  .btn {
+    width: 85%;
+  }
+  input {
+    width: 100%;
+  }
+
+  #Applybtn {
+    width: 85%;
+  }
+  .containerAdd {
+    width: 85%;
+  }
+}

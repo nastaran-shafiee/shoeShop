@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/css/Address.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="/css/shiping.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- header -->
+      <header>
+        <a href="/html/checkoutt.html">
+          <span class="material-symbols-outlined"> arrow_back </span></a
+        >
+        <h1>Choose Shiping</h1>
+      </header>
+      <!-- end header -->
+      `
+
+      <!-- start Addres -->
+      <div class="containerAddress" id="containerAddress">
+        <div class="address">
+          <div class="addressCart" id="addressCart">
+            <div class="location black">
+              <span class="material-symbols-outlined"> local_shipping </span>
+            </div>
+            <div class="nameAddress">
+              <p class="name" id="name">Economy</p>
+              <p class="addressdes">arrived after five days</p>
+            </div>
+            <div class="edit" id="nameAddress" id="edit">
+              <input type="radio" name="check" id="" class="check" />
+              <span>$<span>15</span></span>
+            </div>
+          </div>
+        </div>
+        <!-- 2 -->
+
+        <div class="address">
+          <div class="addressCart" id="addressCart">
+            <div class="location black">
+              <span class="material-symbols-outlined"> local_shipping </span>
+            </div>
+            <div class="nameAddress">
+              <p class="name" id="name">Regular</p>
+              <p class="addressdes">arrived after three days</p>
+            </div>
+            <div class="edit" id="nameAddress" id="edit">
+              <input type="radio" name="check" id="${item.id}" class="check" />
+
+              <span>$<span>20</span></span>
+            </div>
+          </div>
+        </div>
+        <!-- 3 -->
+
+        <div class="address">
+          <div class="addressCart" id="addressCart">
+            <div class="location black">
+              <span class="material-symbols-outlined"> local_shipping </span>
+            </div>
+            <div class="nameAddress">
+              <p class="name" id="name">cargo</p>
+              <p class="addressdes">arrived after two days</p>
+            </div>
+            <div class="edit" id="nameAddress" id="edit">
+              <input type="radio" name="check" id="${item.id}" class="check" />
+              <span>$<span>25</span></span>
+            </div>
+          </div>
+        </div>
+        <!-- 4 -->
+        <div class="address">
+          <div class="addressCart" id="addressCart">
+            <div class="location black">
+              <span class="material-symbols-outlined"> local_shipping </span>
+            </div>
+            <div class="nameAddress">
+              <p class="name" id="name">Express</p>
+              <p class="addressdes">arrived after tomorow</p>
+            </div>
+            <div class="edit" id="nameAddress" id="edit">
+              <input type="radio" name="check" id="${item.id}" class="check" />
+              <span>$<span>30</span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end address -->
+
+      <!-- add aply -->
+      <div class="containerApply"><button id="Applybtn">Apply</button></div>
+      <!-- end aply -->
+    </div>
+    <script src="/js/shiping.js"></script>
+  </body>
+</html>

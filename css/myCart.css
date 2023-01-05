@@ -1,0 +1,293 @@
+body {
+  background-color: #ececec;
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  padding-top: 2em;
+  margin: 0 auto;
+  min-height: 100vh !important;
+}
+header {
+  width: 85%;
+
+  margin: 0 auto;
+  display: flex;
+
+  justify-content: space-between;
+}
+.header img {
+  align-self: center;
+  width: 3em;
+  height: 3em;
+  color: black;
+}
+.containerBody {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 0;
+}
+.checkout1 {
+  grid-column: 2/3;
+  margin-top: 0;
+  position: fixed;
+  right: 5%;
+  top: 30%;
+}
+.display {
+  display: flex;
+  gap: 1.25em;
+}
+input {
+  width: 200px;
+  height: 20px;
+}
+.search i {
+  font-size: 2.5em;
+  align-self: end;
+}
+.containerCart {
+  grid-column: 1/2;
+  height: fit-content;
+  display: flex;
+  padding: 0.8rem;
+  margin-top: 3rem;
+  width: 30em;
+  background-color: white;
+  margin-left: 6.25rem;
+  border-radius: 1.25em;
+  gap: 0.85rem;
+  line-height: 0.1em;
+}
+.cartImg {
+  align-self: center;
+  width: 7em;
+  height: 7em;
+  margin-left: 0.3125rem;
+  border-radius: 1rem;
+  background-color: #f3f3f3;
+  display: flex;
+  justify-content: center;
+}
+.cartImg img {
+  width: 4em;
+  height: 2em;
+  align-self: center;
+}
+.cart {
+  width: 100%;
+}
+.row1 {
+  align-content: flex-start;
+  display: flex;
+  font-size: 1.5em;
+  font-weight: bold;
+  justify-content: space-between;
+}
+.row1 i {
+  align-self: center;
+}
+.price {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+footer {
+  margin-top: 5rem !important;
+  width: 100%;
+  margin: 0 auto;
+  position: fixed;
+  bottom: 0;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: white;
+}
+nav i {
+  font-size: 2rem !important;
+}
+span {
+  color: rgb(117, 117, 117);
+  font-weight: 600;
+}
+i {
+  color: black;
+  font-weight: 600;
+}
+.checkout {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  display: none;
+}
+
+/* CSS */
+.checkBtn {
+  background-color: rgb(24, 23, 23);
+  border: 0 solid #e2e8f0;
+  border-radius: 1.5rem;
+  box-sizing: border-box;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1;
+  padding: 1rem 1.6rem;
+  text-align: center;
+  text-decoration: none #0d172a solid;
+  text-decoration-thickness: auto;
+  transition: all 0.1s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0px 1px 2px rgba(166, 175, 195, 0.25);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+.btn {
+  width: 100%;
+}
+.tottalPrice {
+  margin-left: 1.5625rem;
+}
+.number {
+  box-sizing: border-box;
+  padding: 1rem;
+  width: 5rem;
+  height: 2rem;
+  background-color: #ececec;
+  border-radius: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.number span {
+  font-size: 1em;
+  color: black;
+  font-weight: bolder;
+  cursor: pointer;
+}
+/* modal */
+
+/* Float cancel and delete buttons and add an equal width */
+
+/* Add a color to the cancel button */
+.cancelbtn {
+  background-color: #ccc;
+  color: black;
+  border-radius: 2.5rem;
+  width: 40%;
+}
+
+/* Add a color to the delete button */
+.deletebtn {
+  width: 40%;
+  background-color: black;
+  color: white;
+  border-radius: 2.5rem;
+}
+
+/* Add padding and center-align text to the container */
+.containerModal {
+  box-sizing: border-box;
+
+  padding: 16px;
+  text-align: center;
+  bottom: 50%;
+  background-color: white;
+  width: 400px;
+  margin: 0 auto;
+  height: 400px;
+  border-radius: 2.5rem;
+}
+#containerCart {
+  margin-left: 0;
+  width: 90%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #474e5d62;
+  padding-top: 50px;
+}
+
+/* Modal Content/Box */
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* The Modal Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+
+.clearfix {
+  margin-top: 2rem;
+  display: flex;
+  gap: 2.5rem;
+  justify-content: center;
+}
+
+/* Change styles for cancel button and delete button on extra small screens */
+
+@media only screen and (max-width: 800px) {
+  .containerCart {
+    width: 80%;
+  }
+  .row1 {
+    font-size: 1.1em;
+  }
+  .containerBody {
+    grid-template-columns: 1fr;
+  }
+  .checkout1 {
+    display: none;
+  }
+  .containerCart {
+    margin: 0 auto;
+    margin-top: 2em;
+  }
+  .checkout {
+    display: grid;
+  }
+  .containerModal {
+    box-sizing: border-box;
+    position: absolute;
+    padding: 16px;
+    text-align: center;
+    bottom: 3.125rem;
+    background-color: white;
+    width: 100%;
+    margin: 0 auto;
+    height: 38%;
+    border-radius: 0;
+
+    border-top-right-radius: 4rem !important;
+    border-top-left-radius: 4rem !important;
+  }
+}

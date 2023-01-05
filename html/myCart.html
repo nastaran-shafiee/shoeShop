@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/myCart.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+  <body>
+    <div class="container" id="container1">
+      <header class="header">
+        <div class="display">
+          <img src="/Assest/images/logo2.png" alt="" />
+          <h1>My Cart</h1>
+        </div>
+        <div class="search"><i class="fa fa-search"></i></div>
+      </header>
+
+      <!-- 1 -->
+      <div class="containerBody">
+        <div id="container"></div>
+        <div class="checkout1">
+          <div class="tottalPrice">
+            <p>Total price</p>
+            <h3 class="sumPrice"></h3>
+          </div>
+          <div class="btn"><button class="checkBtn">Check Out</button></div>
+        </div>
+      </div>
+    </div>
+   
+
+      <!-- Modal content -->
+      <!-- modal -->
+      <div id="id01" class="modal">
+        <span
+          onclick="document.getElementById('id01').style.display='none'"
+          class="close"
+          title="Close Modal"
+          >×</span
+        >
+        <div class="modal-content">
+          <div class="containerModal">
+            <h2>Remove from cart?</h2>
+
+            <div class="containerCart" id="containerCart">
+              <div class="cartImg">
+                <img src="" alt="" id="imgModal" />
+              </div>
+              <div class="cart">
+                <div class="row1">
+                  <p id="modalName"></p>
+                </div>
+                <p>
+                  <span>size = </span><span id="sizeModal">42</span> |
+                  <span>color</span>
+                  <span id="colorModal">blue</span>
+                </p>
+                <div class="price">
+                  <p id="totalprice "><span id="totalpriceModal"></span></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="clearfix">
+              <button
+                type="button"
+                onclick="document.getElementById('id01').style.display='none'"
+                class="cancelbtn"
+                id="cancelbtn"
+              >
+                Cancel
+              </button>
+              <button
+                type="button"
+                onclick="deleteItemFromCard()"
+                class="deletebtn"
+                id="deletebtn"
+              >
+                Delete
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- end modal -->
+    </footer>
+    <footer>
+      <nav>
+        <div class="footerIcone">
+          <a href="/html/Home.html"> <i class="fa fa-home"></i></a>
+
+          <p>Home</p>
+        </div>
+        <div>
+          <a href="/html/myCart.html"> <i class="fa fa-shopping-bag"></i></a>
+
+          <p>cart</p>
+        </div>
+        <div>
+          <a href="/html/order.html" target="_blank">
+            <i class="fa fa-shopping-cart"></i
+          ></a>
+
+          <p>orders</p>
+        </div>
+        <div>
+          <a href="/html/checkoutt.html" target="_blank">
+            <i class="fa fa-shopping-basket"></i
+          ></a>
+          <p>wallet</p>
+        </div>
+        <div>
+          <i class="fa fa-user"></i>
+          <p>profile</p>
+        </div>
+      </nav>
+    </footer>
+    <script src="/js/myCart.js"></script>
+  </body>
+</html>
